@@ -1,0 +1,16 @@
+dubbo:
+  application:
+    name: dubbo-consumer
+  registry:
+    address: zookeeper://172.16.32.77:2181     
+  protocol:
+    name: dubbo
+    serialization: hessian2
+    port: 20881
+  consumer:
+    timeout: 1000
+server:
+  port: 9092
+spring:
+  application:
+    name: dubbo-consumer
